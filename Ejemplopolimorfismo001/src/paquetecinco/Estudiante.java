@@ -1,4 +1,4 @@
-package paquetecuatro;
+package paquetecinco;
 
 public abstract class Estudiante {
 
@@ -74,5 +74,22 @@ public abstract class Estudiante {
      */
     public double obtenerMatricula() {
         return matricula;
+    }
+
+    @Override
+    public String toString() {
+
+        String cadenaFinal = String.format("Nombre: %s\n"
+                + "Apellido: %s\n"
+                + "Identificación: %s\n"
+                + "Edad: %s\n"
+                + "Total Matricula: %.2f\n",
+                obtenerNombresEstudiante(),
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
+                obtenerMatricula());
+
+        return cadenaFinal;
     }
 }

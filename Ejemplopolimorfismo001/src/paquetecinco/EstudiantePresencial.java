@@ -1,4 +1,5 @@
-package paqueteseis;
+package paquetecinco;
+
 
 public class EstudiantePresencial extends Estudiante {
 
@@ -8,10 +9,6 @@ public class EstudiantePresencial extends Estudiante {
      */
     int numeroCreditos;
     double costoCredito;
-
-    public EstudiantePresencial(String nombre, String apellido) {
-        super(nombre, apellido);
-    }
 
     //  Métodos establecer y calcular para los datos o atributos de la clase
     // 2.  Método establecerNumeroCreditos(numero: Real)
